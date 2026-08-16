@@ -3,20 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore event decoration portfolio for weddings, mandaps, haldi, birthdays, and baby showers in Kallam and Dharashiv." />
   <title>Portfolio | AP Decoration & Events - Kallam, Dharashiv</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Plus+Jakarta+Sans:wght@500;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <!-- NAVIGATION -->
-  <nav class="navbar">
-    <a href="/" class="logo">
-      <span class="logo-mark">AP</span>
+  <nav class="navbar" aria-label="Main Navigation">
+    <a href="/" class="logo" aria-label="AP Decoration and Events Home">
+      <span class="logo-mark" aria-hidden="true">AP</span>
       <div class="logo-text">
         <span class="brand-name">DECORATION & EVENTS</span>
         <span class="brand-tag">Kallam • Dharashiv</span>
@@ -26,162 +27,195 @@
       <li><a href="/">Home</a></li>
       <li><a href="/portfolio" class="active">Portfolio</a></li>
       <li><a href="/contact">Book on Call</a></li>
-      <li><a href="/contact" class="btn btn-nav"><i class="fa-solid fa-phone"></i> Book Now</a></li>
+      <li>
+        <a href="/contact" class="btn btn-nav">
+          <svg class="icon-inline" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1.02l-2.2 2.2z"/></svg>
+          Book Now
+        </a>
+      </li>
     </ul>
   </nav>
 
   <!-- PAGE HEADER -->
   <header class="page-header">
     <h1>Our Event Decoration Portfolio</h1>
-    <p>Explore all 14 signature decor services we deliver across Kallam, Dharashiv and nearby areas.</p>
+    <p>Explore all 14 signature decor services we deliver across Kallam, Dharashiv, and nearby regions.</p>
   </header>
 
   <!-- PORTFOLIO GRID -->
-  <section class="section">
+  <main class="section">
     <div class="portfolio-grid">
       
       <!-- 1. Wedding Decoration -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p1"><i class="fa-solid fa-champagne-glasses"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p1">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Wedding Ceremony</span>
           <h3>Wedding Decoration</h3>
           <p>Grand stage designs, floral backdrops, and carpeted walkways crafted for your big day.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 2. Mandap Decoration -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p2"><i class="fa-solid fa-landmark"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p2">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L2 7v2h20V7L12 2zm-8 8v8H2v2h20v-2h-2v-8h-2v8h-3v-8h-2v8h-2v-8H8v8H5v-8H4z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Sacred Setup</span>
           <h3>Mandap Decoration</h3>
           <p>Traditional floral pillars, royal dome styling, and havankund setups.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 3. Saptapadi Setup -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p1"><i class="fa-solid fa-shoe-prints"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p1">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 5.5c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zM9.8 8.9L7 23h2.1l1.8-8 2.1 2v6h2v-7.5l-2.1-2 .6-3C14.8 12 16.8 13 19 13v-2c-1.9 0-3.5-1-4.3-2.4l-1-1.6c-.4-.6-1-1-1.7-1-.3 0-.5.1-.8.1L6 8.3V13h2V9.6l1.8-.7z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Ritual Decor</span>
           <h3>Saptapadi Decoration</h3>
           <p>Specially curated floral paths and auspicious decor for the sacred 7 vows.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 4. Engagement Decoration -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p2"><i class="fa-solid fa-ring"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p2">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Ring Ceremony</span>
           <h3>Engagement Decoration</h3>
           <p>Romantic ring ceremony stages, couple seating, and modern ring-frame backdrops.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 5. Haldi Decoration -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p4"><i class="fa-solid fa-sun"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p4">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1s-1-.45-1-1V3c0-.55.45-1 1-1zm0 16c.55 0 1 .45 1 1v2c0 .55-.45 1-1 1s-1-.45-1-1v-2c0-.55.45-1 1-1z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Pre-Wedding</span>
           <h3>Haldi Decoration</h3>
           <p>Vibrant yellow marigold setups, traditional urlis, and festive photo booths.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 6. Mehndi Decoration -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p3"><i class="fa-solid fa-spa"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p3">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Pre-Wedding</span>
           <h3>Mehndi Decoration</h3>
           <p>Boho green drapes, fairy lights, festive pillows, and comfortable client seating.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 7. Baby Shower (Dohale Jevan) -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p3"><i class="fa-solid fa-person-breastfeeding"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p3">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Maternity Celebration</span>
           <h3>Baby Shower Decoration</h3>
           <p>Elegant traditional floral swings, cradle styling, and pastel color themes.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 8. Baby Welcome Setup -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p4"><i class="fa-solid fa-heart"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p4">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Home Celebration</span>
           <h3>Baby Welcome Decoration</h3>
           <p>Doorstep balloon gates, baby name signage, and warm homecoming floral decors.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 9. Baby Birthday Setup -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p3"><i class="fa-solid fa-baby"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p3">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 0l-1.71 2.97c-.19.3-.29.65-.29 1.03 0 1.1.9 2 2 2zm6 3h-1V8c0-.55-.45-1-1-1h-1.17C14.47 6.47 13.31 6 12 6s-2.47.47-2.83 1H8c-.55 0-1 .45-1 1v1H6c-1.66 0-3 1.34-3 3v9c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-9c0-1.66-1.34-3-3-3z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">1st & Toddler Birthdays</span>
           <h3>Baby Birthday Decoration</h3>
           <p>Cartoon characters, jungle/princess themes, candy-color balloon styling, and cake tables.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 10. General Birthdays -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p6"><i class="fa-solid fa-cake-candles"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p6">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 6c1.11 0 2-.9 2-2 0-.38-.1-.73-.29-1.03L12 0l-1.71 2.97c-.19.3-.29.65-.29 1.03 0 1.1.9 2 2 2zm6 3h-1V8c0-.55-.45-1-1-1h-1.17C14.47 6.47 13.31 6 12 6s-2.47.47-2.83 1H8c-.55 0-1 .45-1 1v1H6c-1.66 0-3 1.34-3 3v9c0 .55.45 1 1 1h16c.55 0 1-.45 1-1v-9c0-1.66-1.34-3-3-3z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Birthday Parties</span>
           <h3>Birthday Decoration</h3>
           <p>LED neon backdrops, metallic balloon arches, and custom age milestones.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 11. Anniversary Decoration -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p2"><i class="fa-solid fa-gift"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p2">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76V8h2v.76L15.38 12 17 10.83 14.92 8H20v6z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Romantic Milestone</span>
           <h3>Anniversary Decoration</h3>
           <p>Intimate candle & rose setups, fairy light canopies, and silver/golden jubilee stages.</p>
         </div>
-      </div>
+      </article>
 
-      <!-- 12. Griha Pravesh / New Home Opening (Vastu Shanti) -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p1"><i class="fa-solid fa-house-user"></i></div>
+      <!-- 12. Griha Pravesh / New Home Opening -->
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p1">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Griha Pravesh & Vastu</span>
           <h3>New Home Opening (Vastu Shanti)</h3>
           <p>Traditional mango-leaf torans, entrance floral rangolis, and pooja area decoration.</p>
         </div>
-      </div>
+      </article>
 
-      <!-- 13. Shop Opening / Grand Opening -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p5"><i class="fa-solid fa-store"></i></div>
+      <!-- 13. Shop Opening -->
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p5">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4v2h16V4zm1 10v-2l-1-5H4l-1 5v2h1v6h10v-6h4v6h2v-6h1zm-9 4H6v-4h6v4z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Commercial Inauguration</span>
           <h3>Shop & Office Opening</h3>
           <p>Grand balloon pillar entrances, ribbon-cutting setups, and floral shop-front garlands.</p>
         </div>
-      </div>
+      </article>
 
       <!-- 14. Ganpati Decoration -->
-      <div class="portfolio-card">
-        <div class="portfolio-preview bg-p4"><i class="fa-solid fa-om"></i></div>
+      <article class="portfolio-card">
+        <div class="portfolio-preview bg-p4">
+          <svg class="portfolio-svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
         <div class="portfolio-info">
           <span class="tag">Festive Decor</span>
           <h3>Ganpati Festival Decoration</h3>
           <p>Eco-friendly flower makhar setups, temple themes, and divine festive lighting.</p>
         </div>
-      </div>
+      </article>
 
     </div>
-  </section>
+  </main>
 
   <!-- FOOTER -->
   <footer>
